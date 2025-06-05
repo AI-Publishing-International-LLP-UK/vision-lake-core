@@ -1,0 +1,19 @@
+{
+  "name": "payment-pipeline",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "firebase-admin": "^13.4.0",
+    "pandadoc": "^1.0.1",
+    "stripe": "^18.2.1",
+    "xero-node": "^11.1.0"
+  }
+}

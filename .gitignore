@@ -1,5 +1,7 @@
 .env
-.env.*
+.env.local
+.env.development
+.env.production
 node_modules/
 *.log
 .DS_Store
