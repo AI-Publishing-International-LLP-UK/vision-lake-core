@@ -1,0 +1,224 @@
+{
+  "squadronConfig": {
+    "version": "1.0",
+    "lastUpdated": "2024-12-20",
+    "squadronLeaders": [
+      {
+        "id": "SL-001",
+        "name": "RIX-Alpha",
+        "role": "Strategic Vision",
+        "region": "us-west1-a",
+        "instanceId": "squadron-leader-us-west1-a-1",
+        "capabilities": ["long-term planning", "resource allocation", "executive decision making"],
+        "subprocesses": 4,
+        "maxClients": 25,
+        "status": "active"
+      },
+      {
+        "id": "SL-002",
+        "name": "RIX-Bravo",
+        "role": "Technical Implementation",
+        "region": "us-west1-a",
+        "instanceId": "squadron-leader-us-west1-a-2",
+        "capabilities": ["architecture design", "code review", "technical debt management"],
+        "subprocesses": 6,
+        "maxClients": 20,
+        "status": "active"
+      },
+      {
+        "id": "SL-003",
+        "name": "RIX-Charlie",
+        "role": "Client Relations",
+        "region": "us-west1-a",
+        "instanceId": "squadron-leader-us-west1-a-3",
+        "capabilities": ["onboarding", "feedback processing", "satisfaction monitoring"],
+        "subprocesses": 8,
+        "maxClients": 50,
+        "status": "active"
+      },
+      {
+        "id": "SL-004",
+        "name": "RIX-Delta",
+        "role": "Financial Operations",
+        "region": "us-west1-b",
+        "instanceId": "squadron-leader-us-west1-b-1",
+        "capabilities": ["payment processing", "invoice generation", "financial reporting"],
+        "subprocesses": 5,
+        "maxClients": 100,
+        "status": "active"
+      },
+      {
+        "id": "SL-005",
+        "name": "RIX-Echo",
+        "role": "Content Creation",
+        "region": "us-west1-b",
+        "instanceId": "squadron-leader-us-west1-b-2",
+        "capabilities": ["article writing", "SEO optimization", "multimedia generation"],
+        "subprocesses": 12,
+        "maxClients": 30,
+        "status": "active"
+      },
+      {
+        "id": "SL-006",
+        "name": "RIX-Foxtrot",
+        "role": "Marketing Strategy",
+        "region": "us-west1-b",
+        "instanceId": "squadron-leader-us-west1-b-3",
+        "capabilities": ["campaign planning", "analytics", "growth hacking"],
+        "subprocesses": 7,
+        "maxClients": 15,
+        "status": "active"
+      },
+      {
+        "id": "SL-007",
+        "name": "RIX-Golf",
+        "role": "Research & Development",
+        "region": "us-west1-c",
+        "instanceId": "squadron-leader-us-west1-c-1",
+        "capabilities": ["market research", "competitor analysis", "innovation planning"],
+        "subprocesses": 6,
+        "maxClients": 10,
+        "status": "active"
+      },
+      {
+        "id": "SL-008",
+        "name": "RIX-Hotel",
+        "role": "Legal & Compliance",
+        "region": "us-west1-c",
+        "instanceId": "squadron-leader-us-west1-c-2",
+        "capabilities": ["contract review", "regulatory compliance", "risk assessment"],
+        "subprocesses": 4,
+        "maxClients": 100,
+        "status": "active"
+      },
+      {
+        "id": "SL-009",
+        "name": "RIX-India",
+        "role": "Customer Support",
+        "region": "us-west1-c",
+        "instanceId": "squadron-leader-us-west1-c-3",
+        "capabilities": ["ticket management", "issue resolution", "knowledge base maintenance"],
+        "subprocesses": 10,
+        "maxClients": 75,
+        "status": "active"
+      },
+      {
+        "id": "SL-010",
+        "name": "RIX-Juliet",
+        "role": "Quality Assurance",
+        "region": "us-west1-a",
+        "instanceId": "squadron-leader-us-west1-a-1",
+        "capabilities": ["testing", "bug tracking", "performance monitoring"],
+        "subprocesses": 8,
+        "maxClients": 50,
+        "status": "standby"
+      },
+      {
+        "id": "SL-011",
+        "name": "RIX-Kilo",
+        "role": "Disaster Recovery",
+        "region": "us-west1-c",
+        "instanceId": "squadron-leader-us-west1-c-1",
+        "capabilities": ["backup management", "system restoration", "continuity planning"],
+        "subprocesses": 3,
+        "maxClients": 150,
+        "status": "standby"
+      }
+    ],
+    "pcpAssignmentAlgorithm": {
+      "version": "2.1",
+      "factors": [
+        {
+          "name": "clientTier",
+          "weight": 0.35,
+          "description": "Higher tier clients get priority assignment to specialized PCPs"
+        },
+        {
+          "name": "domainExpertise",
+          "weight": 0.25,
+          "description": "Match client industry with PCP specialization"
+        },
+        {
+          "name": "availableCapacity",
+          "weight": 0.15,
+          "description": "PCPs with more available bandwidth receive new assignments"
+        },
+        {
+          "name": "performanceRating",
+          "weight": 0.15,
+          "description": "PCPs with higher satisfaction ratings receive priority assignments"
+        },
+        {
+          "name": "geographicProximity",
+          "weight": 0.10,
+          "description": "Prefer PCPs in similar timezone to client when possible"
+        }
+      ],
+      "reassignmentThreshold": 0.75,
+      "maxClientsPerPCP": {
+        "basic": 20,
+        "premium": 8,
+        "enterprise": 2
+      },
+      "emergencyReassignmentProtocol": "SL-003"
+    },
+    "pricingTiers": [
+      {
+        "name": "basic",
+        "price": 350,
+        "features": [
+          "Access to Vision Lake platform",
+          "1 PCP assignment",
+          "Up to 5 projects",
+          "Standard support (24-48hr response)"
+        ],
+        "recommendedFor": "Startups and small businesses"
+      },
+      {
+        "name": "premium",
+        "price": 10000,
+        "features": [
+          "Access to Vision Lake platform",
+          "Dedicated PCP team (3 specialists)",
+          "Unlimited projects",
+          "Premium support (4-8hr response)",
+          "Custom domain integration",
+          "Advanced analytics"
+        ],
+        "recommendedFor": "Growing businesses and medium enterprises"
+      },
+      {
+        "name": "enterprise",
+        "price": 25000,
+        "features": [
+          "Access to Vision Lake platform",
+          "Executive PCP team with strategic advisor",
+          "Unlimited projects with priority processing",
+          "Enterprise support (1-2hr response)",
+          "Custom implementation and integration",
+          "Dedicated infrastructure",
+          "Quarterly strategy sessions"
+        ],
+        "recommendedFor": "Large organizations and enterprises"
+      }
+    ],
+    "domainStrategy": {
+      "targetDomains": 250,
+      "seoKeywords": [
+        "AI business solutions",
+        "enterprise AI integration",
+        "AI content generation",
+        "vision lake platform",
+        "AI business transformation",
+        "squadron leadership",
+        "AI strategic planning",
+        "PCP business coaching",
+        "AI publishing solutions",
+        "automated business systems"
+      ],
+      "contentRotationSchedule": "weekly",
+      "backupStrategy": "tripleRedundancy",
+      "interlinkingStructure": "meshNetwork"
+    }
+  }
+}
